@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-size: 24px;
+      }
+      main {
+        max-width: 600px;
+        /* y    x */
+        margin: 60px auto 20px;
+        /* background-color: #a9c9ff; */
+        background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+        padding: 36px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+        background: #fffef0;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          margin: 40px;
+        }
+      }
+
+      p {
+        text-align: justify;
+      }
+      p::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      p::first-letter {
+        font-size: 3em;
+        float: left;
+        line-height: 0.75;
+        font-weight: bold;
+      }
+
+      p::first-line {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quisquam
+        minima omnis rerum quia unde voluptatibus, eos iusto fuga amet atque,
+        tempore quam voluptas corporis! Ea et iste vitae repudiandae!
+      </p>
+      <p>
+        Adipisci quia sapiente veniam ad assumenda, ratione ab earum veritatis
+        laudantium expedita nam consequuntur accusantium cumque sunt illo.
+        Tempora debitis ex, harum tempore obcaecati iure repudiandae nihil
+        dolores architecto nemo?
+      </p>
+      <p>
+        At adipisci quidem atque assumenda excepturi, error mollitia molestias a
+        voluptate rerum, repellat eius iste, facere quis. Ipsam, praesentium
+        dolor. Itaque, deserunt incidunt. Doloribus, officiis deleniti inventore
+        voluptatibus dolorem quasi.
+      </p>
+      <p>
+        Ipsum neque nobis minus recusandae molestiae, vel hic! Quasi praesentium
+        error quo corporis laboriosam facilis sint cupiditate cumque nihil.
+        Quaerat quisquam consectetur ratione quidem adipisci nobis sapiente quae
+        nulla provident.
+      </p>
+    </main>
+  </body>
+</html>
