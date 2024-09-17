@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .stil1 {
+        list-style: none;
+      }
+      .stil2 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .stil3 {
+        list-style-type: square;
+      }
+
+      .stil4{
+        list-style-position: inside;
+        /* padding: 0; */
+        /* list-style-position: outside -- DEFAULT */
+      }
+      ul.stil4>li {
+        border: 1px solid black;
+      }
+      .stil5 {
+        list-style-image: url(pikachu.png);
+      }
+      .stil6>li::marker {
+        color: red;
+      }
+      ul.stil7{
+        list-style: none;
+        padding: 0;
+        border: 1px solid black;
+        border-radius: 8px;
+        overflow: hidden;
+        
+      }
+      ul.stil7>li {
+        padding: 12px;
+        border-bottom: 1px solid black;
+      }
+      ul.stil7>li:last-child {
+        border-bottom: none;
+        
+      }
+
+      ul.stil7>li:nth-child(2n){
+        background-color: #f0f0f0 ;
+      }
+      ul.stil7>li:hover {
+        background-color: burlywood;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Marker Özelleştirme Advance</h4>
+    <ul class="stil7">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Marker Özelleştirme</h4>
+    <ul class="stil6">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Marker Resmi</h4>
+    <ul class="stil5">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Marker pozisyonları ( DIŞ)</h4>
+    <ul class="stil4">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>List Stil Tipi</h4>
+    <ul class="stil3">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Stillerinden Arındırılmış</h4>
+    <ul class="stil2">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Marker'sız Liste</h4>
+    <ul class="stil1">
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+    <h4>Standart Görünüm</h4>
+    <ul>
+      <li>Cağ Kebap</li>
+      <li>Lahmacun</li>
+      <li>Döner Dürüm</li>
+      <li>Matı</li>
+      <li>Pideli Köfte</li>
+    </ul>
+  </body>
+</html>

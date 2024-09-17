@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position2</title>
+    <style>
+        .kutu {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        
+        .poke {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        /* mutlak pozisyonlama yapılan bir elementin konumu normalde tarayıcının görünen kısmına göre yapılır. Ancak parent elementinde position: relative kuralı varsa onun sınırları dahilinde konumlama yapılacaktır*/
+
+        .uzun {
+            position: relative;
+        }
+        .agac {                 /* fixed verilince scroll işleminde bile konumlanmayı yapar. */
+            position: absolute; /* sayfanın görünen kısmına yapar.*/
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+            z-index: -1;
+            opacity: .4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Başlı</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non assumenda nulla voluptatum sint neque eaque, quidem odio architecto animi minima nam molestiae temporibus? Modi cum corporis quos consectetur maiores.</p>
+    <div class="kutu">
+        <img class="poke" src="pikachu.png" alt="Pokemon">
+    </div>
+    <p class="uzun">
+        <img class="agac" src="palm-tree.png" alt="" height="100">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, molestiae amet ut laboriosam porro voluptas exercitationem voluptate reiciendis! Temporibus debitis nostrum optio sit, necessitatibus eveniet! Fugiat ipsam reprehenderit laudantium quidem nihil facilis recusandae nam in atque aspernatur quae magni nisi saepe, cum quod beatae rerum quos sapiente explicabo quo tempora temporibus consequatur possimus? Nesciunt minus magni asperiores deleniti incidunt porro ut, explicabo eligendi dolor autem aperiam tenetur ipsa facilis sint eveniet veniam officiis, dolorum quidem consectetur, modi molestiae fugit praesentium fugiat laudantium. Fugiat molestiae nulla asperiores voluptatem a quis impedit iure, rerum, doloremque possimus sunt? Beatae cupiditate, itaque expedita fugiat totam eum nam! Aliquid itaque necessitatibus reiciendis nesciunt. Tempore placeat quas eos vero voluptatem dolorum hic dignissimos ut, sint nobis reiciendis consequuntur repudiandae reprehenderit quasi nesciunt eligendi, est corporis distinctio repellendus aliquid maiores possimus quidem necessitatibus? Aut voluptate excepturi quidem maiores maxime voluptas a vero, debitis facere magnam libero recusandae.</p>
+</body>
+</html>
