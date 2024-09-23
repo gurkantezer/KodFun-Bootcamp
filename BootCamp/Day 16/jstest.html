@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #kutu {
+        background-color: orange;
+        color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kutu" onclick="yap()">150</div>
+    <script>
+      let x = 150;
+      let kutu = document.getElementById("kutu");
+
+      function yap() {
+        x = x + 50;
+        kutu.textContent = x + "px";
+        kutu.style.height = x + "px";
+      }
+    </script>
+  </body>
+</html>

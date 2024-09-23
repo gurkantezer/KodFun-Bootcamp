@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <h1>JS Öğreniyorum</h1>
+    <p>
+      <!-- Buranın içini JS ile değiştirebilir miyiz ? 
+
+    -->
+      <!-- 
+        DOM = Document Object Model
+
+                body
+
+
+        html            
+
+
+                head     -->
+    </p>
+    <script>
+      /* JavaScript'de html dökümanına karşılık gelen   document adında bir nesne vardır. 
+        Document nesnesi üzerinden mevcut sayfadaki dökümanın tüm elementlerine erişebiliriz. */
+
+      /* sayfadaki ilk p elemntine eriş ve içine metni değiştir */
+      let ilkParag = document.querySelector("p");
+      ilkParag.textContent =
+        " Biz kimseyi yarı yolda bırakmadık onlar müsait bir yerde indiler..";
+
+      ilkParag.style.color = "purple";
+
+      document.body.style.background = "linear-gradient(to right, orange, white)";
+
+      /* Programlama: komutların belli sırada belirli bir amaç için çalıştırılması (Algoritma) */
+      /*  alert("Hoppp..pala.. !!!");
+            alert("Hoşgeldinn :)") */
+    </script>
+  </body>
+</html>
