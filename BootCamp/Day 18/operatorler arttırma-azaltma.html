@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment & Decrement</title>
+  </head>
+  <body>
+    <script src="../Ortak/yaz.js"></script>
+
+    <script>
+      let a = 1;
+
+      a++; // a+= 1 arasındaki fark ?
+      ciz(a); // 2
+
+      let b = 1;
+      ciz(b++ * 3); // b değeri kullanım sonrası arttırılır.
+
+      let c = 5;
+      ciz(c++); // 5
+
+      let d = 3;
+      ciz(d++ * 3);
+
+      let e = 3;
+      ciz(++e * e);
+
+      let f = 10;
+      ciz(f-- + --f);
+
+      let g = 3;
+      yaz(++g - g--);
+      ciz(g);
+
+      let h = 4;
+      h = h++;
+      ciz(h);
+
+      let i = 7;
+      i = ++i;
+      yaz(i);
+
+      temizle();
+
+      let j = 5;
+      j *= j++; // j = j * j++
+      ciz(j);
+
+      let k = 0;
+      //   0  -  0       k ilk değeri 0 sonra 1 oldu sonrada 0'a dönüştü
+      yaz(k++ - --k);
+      ciz(k);
+
+      let l = 3;
+      l = l + l * l++;
+      yaz(l);
+
+      let m = 2;
+      m = m * (m + ++m);
+      ciz(m);
+
+      let n = 3;
+      let sonuc = n++ == 3 || ++n == 5;
+      yaz(sonuc);
+      yaz(n);
+
+      // veya (||) operatörü soldaki değer true ise sağına hiç bakmaz, değerlendirmeye almaz.
+
+      // ve(&&) operatörü sol taraf false ise sağı hiç değerlendirmeye almaz.
+
+      let o = 40;
+      yaz(o < 39 && ++o == 41);
+      yaz(o);
+
+      let p = 2;
+      //  3 == 3 olur. p'nin yeni değeri 4 olur.
+      if (++p == p++) yaz(p); // cevap 4 olur
+    </script>
+  </body>
+</html>
+
+<!-- https://learn.microsoft.com/en-us/cpp/c-language/precedence-and-order-of-evaluation?view=msvc-170 -->

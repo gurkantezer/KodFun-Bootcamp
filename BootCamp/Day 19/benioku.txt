@@ -1,0 +1,7 @@
+Doamin ve hosting alma
+doamini nameserver'lara yönlendirme
+plesk & cpanel kullanımı
+dosya yöneticisi kullanma
+filezilla kullanrak ftp yoluyla dosya gönderme/alma
+hosting'e panelden üsretsiz ssl kurulumı (https://)
+subdomian oluşturma

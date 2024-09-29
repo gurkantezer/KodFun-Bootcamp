@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: wheat;
+  font-family: "VT323", monospace;
+}
+
+#saat {
+  font-size: 14vw;
+  background-image: linear-gradient(to right, blue, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

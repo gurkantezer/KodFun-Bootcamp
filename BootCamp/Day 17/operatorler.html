@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operatörler</title>
+  </head>
+  <body>
+    <script src="../Ortak/yaz.js"></script>
+
+    <script>
+      // operatör, taraflar arasında
+      // belli işlemleri yaparak
+      // yeni sonuçlar ürettiren
+      // embollümsü araçlardır.
+
+      // aritmetik operatörler : + - *  /  %  **
+
+      yaz(4 + 4); // toplama işlemi
+      ciz();
+
+      // string concatenation
+      yaz("4" + 4); // "44"
+
+      // typeof operatörü sağındaki verinin türünü string olarak döndürür.
+      let ispat = "4" + 4;
+      yaz(typeof ispat);
+
+      // çarpma işlemi
+      yaz(3 * 4);
+
+      //çarpma  bölme veya çıkarma işlemlerinde ifade string bile olsa önce sayıya dönüştürür.
+
+      yaz("2" * "2");
+
+      // () operatörü metotları/ fonksiyonları çağırmaya(call) yarar.
+      ciz();
+
+      // . operatörü bir nesnenin üyelerine (method/ property) erişmeyi ve değiştirmeyi sağlar
+
+      yaz(document.title); // eriştik/elde ettik
+      document.title = "Adana Kebap + Kola + Künefe"; // güncelledik
+
+      // bir değişkenin içindeki değere ekleme yapma kısayolu
+
+      let a = 3;
+      // a = a + 4; // a'ya 4 ekle ve a'ya eşitle
+      a += 4;
+      yaz(a);
+
+      // BİR SORU
+
+      let s1 = 2;
+      s1 *= s1; // s1 = s1*s1
+      yaz(s1);
+
+      // 2 -
+      let s2 = 2 + 3 * 4;
+      yaz(s2);
+
+      // 3-
+      let s3 = (2 + 3) * 4;
+      yaz(s3);
+
+      // 4 -
+      let s4 = "falanca" + 4 + 3;
+      yaz(s4);
+
+      //5 -
+      let s5 = 3 + 4 + "falanca";
+      yaz(s5);
+
+      let s6 = "2" + 4 * 3;
+      yaz(s6);
+
+      let s7 = ("2" + 4) * 3;
+      yaz(s7);
+    </script>
+  </body>
+</html>
