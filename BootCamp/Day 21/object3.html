@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4">Alan Hesabı</h1>
+      <div class="mb-3">
+        <label class="form-label" for="gen">Genişlik</label>
+        <input class="form-control" type="number" value="0" id="gen" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="yuk">Yükseklik</label>
+        <input class="form-control" type="number" value="0" id="yuk" />
+      </div>
+      <div class="alert alert-info">
+        Uzunlukları girilen dikdörtgen alanı
+        <strong><span id="sonuc">0</span>br²</strong>
+
+        <script>
+          const gen = document.getElementById("gen");
+          const yuk = document.getElementById("yuk");
+          const snc = document.getElementById("sonuc");
+
+          let dikdörtgen = {
+            genislik: 0,
+            yukseklik: 0,
+            alan: function () {
+              return this.genislik * this.yukseklik;
+            },
+          };
+
+          // ihtiyaç duyulan fonk. tanımla
+
+          function sonucuGuncelle() {
+            dikdörtgen.genislik = gen.value;
+            dikdörtgen.yukseklik = yuk.value;
+            snc.textContent = dikdörtgen.alan();
+          }
+
+          // event tanımlama: ne değişince ne olsun
+
+          gen.oninput = sonucuGuncelle; // fonksiyonu çağırmıyoruz atama yapıyoruz.
+          yuk.oninput = sonucuGuncelle;
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  color: #000;
+  background-color: #f1f1f1;
+  line-height: 1.5;
+}
+mark {
+  background-color: black;
+  color: white;
+  padding: 0.2rem 0.5rem;
+}
+header {
+  padding: 2rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+}
+header > h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+main {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.col1 {
+  flex: 2;
+  margin: 0 1rem;
+}
+.col2 {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.box {
+  background-color: white;
+  margin-bottom: 2rem;
+  min-height: 100px; /* SİL */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: #616161;
+  margin-top: 1rem;
+}
+
+img {
+  width: 100%;
+}
+span.date {
+  font-weight: 300;
+  color: black;
+  opacity: 0.65;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3,
+h5 {
+  margin: 1rem;
+  padding: 12px 24px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+p {
+  margin: 1rem;
+  padding: 12px 24px;
+}
+button {
+  font-family: inherit;
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  margin-left: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button.footP {
+  padding: 18px 34px;
+  margin-top: 2rem;
+  font-family: inherit;
+  cursor: not-allowed;
+  opacity: 0.3;
+  background-color: black;
+  color: white;
+  border: none;
+}
+button.footP:hover {
+  background-color: gray;
+}
+
+button.footN {
+  padding: 18px 34px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+button.footN:hover {
+  color: black;
+  background-color: #f1f1f1;
+}
+
+span.comments {
+  float: right;
+  padding-right: 2rem;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0.381);
+}
+
+mark.crc {
+  border-radius: 50%;
+}
+
+a {
+  color: black;
+}
+
+.popular {
+  padding: 1px 16px;
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+li > img {
+  float: left;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+ul :last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: gray;
+}
+
+.tag {
+  display: block;
+  background-color: #f1f1f1;
+  box-sizing: inherit;
+  font-family: inherit;
+  padding: 8px 16px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+span.ctgry {
+  background-color: #f1f1f1;
+  margin: 0 5px 0 16px;
+  font-size: 16px;
+  line-height: 1rem;
+}
+
+@media (max-width: 990px) {
+  main {
+    flex-direction: column;
+  }
+}

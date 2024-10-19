@@ -10,65 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Lato", sans-serif;
-        margin: 0;
-        background-color: #f1f1f1;
-      }
-      mark {
-        background-color: black;
-        color: white;
-        padding: 0.2rem 0.5rem;
-      }
-      header {
-        padding: 2rem;
-        margin: 2rem 0 2rem 0;
-        text-align: center;
-      }
-      header > h1 {
-        margin-top: 0;
-        text-transform: uppercase;
-      }
-      main {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      .col1 {
-        flex: 2;
-        margin: 0 1rem;
-      }
-      .col2 {
-        flex: 1;
-        margin: 0 1rem;
-      }
-
-      .box {
-        background-color: white;
-        margin-bottom: 2rem;
-        min-height: 150px; /* SİL */
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
-
-      footer {
-        min-height: 80px; /* sil */
-        background-color: #616161;
-        margin-top: 1rem;
-      }
-
-      @media (max-width: 990px) {
-        main {
-          flex-direction: column;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -78,17 +20,121 @@
 
     <main>
       <div class="col1">
-        COLUMN 1
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+          <img src="https://picsum.photos/id/476/700/220" alt="" />
+          <h3>TITLE HEADING</h3>
+          <h5>Title description. <span class="date">October 1, 2024</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            modi architecto tempora quas! Quos itaque nesciunt delectus
+            recusandae ab sapiente reprehenderit cumque! Accusantium hic autem
+            assumenda velit repudiandae quos recusandae?
+          </p>
+          <button>READ MORE >></button>
+          <span class="comments">Comments <mark>0</mark> </span>
+        </div>
+        <div class="box">
+          <img src="https://picsum.photos/id/376/700/220" alt="" />
+          <h3>BLOG ENTRY</h3>
+          <h5>Title description. <span class="date">October 1, 2024</span></h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            modi architecto tempora quas! Quos itaque nesciunt delectus
+            recusandae ab sapiente reprehenderit cumque! Accusantium hic autem
+            assumenda velit repudiandae quos recusandae?
+          </p>
+          <button>READ MORE >></button>
+          <span class="comments">Comments <mark class="crc">2</mark> </span>
+        </div>
       </div>
       <div class="col2">
-        COLUMN 2
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+          <img src="https://picsum.photos/id/177/400/250" alt="" />
+          <h3>My Name</h3>
+          <p>
+            Just me, myself and I, exploring the universe of uknownment. I have
+            a heart of love and a interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you.
+          </p>
+        </div>
+        <div class="box">
+          <div class="popular">
+            <h4>Popular Posts</h4>
+          </div>
+          <ul>
+            <li>
+              <img
+                src="https://www.w3schools.com/w3images/workshop.jpg"
+                alt=""
+                style="width: 50px"
+              />
+              <span class="post">Lorem </span>
+              <br />
+              <span class="post">Sed mattius nunc</span>
+            </li>
+            <li>
+              <img
+                src="https://www.w3schools.com/w3images/gondol.jpg"
+                alt=""
+                style="width: 50px"
+              />
+              <span class="post">Ipsum</span>
+              <br />
+              <span>Praes tinci sed</span>
+            </li>
+
+            <li>
+              <img
+                src="https://www.w3schools.com/w3images/skies.jpg"
+                alt=""
+                style="width: 50px"
+              />
+              <span class="post">Dorum</span>
+              <br />
+              <span>Ultricies congue</span>
+            </li>
+
+            <li>
+              <img
+                src="https://www.w3schools.com/w3images/rock.jpg"
+                alt=""
+                style="width: 50px"
+              />
+              <span class="post">Mingsum</span>
+              <br />
+              <span> Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+        <div class="box tags">
+          <div class="tag">
+            <h4>Tags</h4>
+          </div>
+          <div class="category">
+            <span class="ctgry"> <mark>Travel</mark></span>
+            <span class="ctgry">New York</span>
+            <span class="ctgry">London</span>
+            <span class="ctgry">IKEA</span>
+            <span class="ctgry">NORWAY</span>
+            <span class="ctgry">DIY</span>
+            <span class="ctgry">Ideas</span>
+            <span class="ctgry">Baby</span>
+            <span class="ctgry">Family</span>
+            <span class="ctgry">News</span>
+            <span class="ctgry">Clothing</span>
+            <span class="ctgry">Shopping</span>
+            <span class="ctgry">Sports</span>
+            <span class="ctgry">Games</span>
+          </div>
+        </div>
       </div>
     </main>
-    <footer>Sayfanın en alt kısmı (copy right, vs)</footer>
+    <footer>
+      <button class="footP">Previous</button>
+      <button class="footN">Next>></button>
+      <p style="color: white">
+        Powered by <a href="#" style="color: white">GT</a>
+      </p>
+    </footer>
   </body>
 </html>

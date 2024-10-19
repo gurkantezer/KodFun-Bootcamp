@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const baslik = document.createElement("h1");
+      baslik.textContent = " Bir başlık";
+      document.body.append(baslik);
+      // p elemnti oluşturma
+
+      const parag = document.createElement("p");
+      parag.textContent = "Hello World.  I learning JS. ";
+
+      // oluşan elemnti DOM ağacına bağlama
+      document.body.append(parag);
+
+      const guclu = document.createElement("strong");
+      guclu.textContent = "Bu cümleyi paragrafın sonuna ekledik.";
+      parag.append(guclu);
+
+      const vurgulu = document.createElement("em");
+      vurgulu.textContent = "Bilmiyorum hocam";
+      parag.prepend(vurgulu);
+
+      // Başlık tan sonra yatay çizgi ekleme
+
+      const cizgi = document.createElement("hr");
+      baslik.after(cizgi);
+
+      // developer tools üzerinden elementi seç ve properties sekmesinden kontrol et
+      // baslik.abidik = "tencere tava"
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../Ortak/yaz.js"></script>
+
+    <script>
+      // normal nesne oluşturma { marka:"bmw", yil : 2024, renk:"siyah"}
+      // fonksiyon ile nesne üretme ( constructor)
+
+      function araba(marka, yil, renk) {
+        this.marka = marka;
+        this.yil = yil;
+        this.renk = renk;
+
+        this.ozetle = function () {
+          return this.renk + " renkli " + this.yil + " model " + this.marka;
+        };
+
+        yaz("Benim arabam var");
+      }
+
+      let a1 = new araba("Hyundai i20", 2020, "Beyaz");
+      console.log(a1);
+      a1.yil = 2012;
+      yaz(a1.ozetle());
+
+      let a2 = new araba("BMW İ7", 2024, "siyah");
+      yaz(a2.ozetle());
+    </script>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new -->
